@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>活动规则</title>
+    <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/Bootstrap/plugins/swiper/swiper.min.css" rel="stylesheet" />
+    <link href="css/PraiseIndex.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid"id="box">
+        <div class="row">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/pic1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/pic1.jpg" />
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!--活动rule-->
+        <div class="txt">
+            <p v-for="todo in todos">
+                {{ todo.text }}
+            </p>
+            <button class="btn btn-block btn-primary">立即参与</button>
+        </div>
+        </div>
+    <script src="js/lib/swiper/swiper.min.js"></script>
+    <script src="js/lib/vue/vue.js"></script>
+    <script>
+        var box = new Vue({
+            el: '#box',
+            data: {
+                todos: [
+             { text: '1.不可以干嘛' },
+             { text: '2.可以干嘛' },
+             { text: '3.能干嘛' }
+                ]
+            },
+            methods: {
+
+            }
+        })
+    </script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            paginationClickable: true,
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: 2500,
+            autoplayDisableOnInteraction: false
+        });
+    </script>
+</body>
+</html>
