@@ -1,132 +1,138 @@
-﻿<!DOCTYPE html>
+
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title>好评有礼</title>
-    <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/Bootstrap/plugins/swiper/swiper.min.css" rel="stylesheet" />
-    <link href="css/PraiseIndex.css" rel="stylesheet" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>好评有礼</title>
+  <link href="css/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/Bootstrap/plugins/swiper/swiper.min.css" rel="stylesheet" />
+  <link href="css/PraiseIndex.css" rel="stylesheet" />
 </head>
+
 <body>
-    <div class="container-fluid" id="box">
-        <!-- Swiper -->
-        <div class="row"style="height:200px;">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="images/pic1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/pic1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/pic1.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="images/pic1.jpg" />
-                    </div>
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div> 
-        <!--步骤一-->
-        <div class="Step">
-            <div class="row">
-                <p>步骤一：</p>
-            </div>
-            <div class="form-group p202">
-                <label for="inputEmail3" class="col-xs-4 control-label p0 text-center">淘宝订单号</label>
-                <div class="col-xs-8">
-                    <input type="email" class="form-control" id="inputEmail3" placeholder="淘宝订单号">
-                </div>
-            </div>
+  <div class="container-fluid" id="box">
+    <!-- Swiper -->
+    <div class="row" style="height:200px;">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img :src="url" />
+          </div>
+          <div class="swiper-slide">
+            <img :src="url" />
+          </div>
+          <div class="swiper-slide">
+            <img :src="url" />
+          </div>
+          <div class="swiper-slide">
+            <img :src="url" />
+          </div>
         </div>
-        <!--步骤二-->
-        <div class="Step">
-            <div class="row">
-                <p>步骤二：</p>
-            </div>
-            <div class="row p30">
-                <div class="col-xs-4 text-center">
-                    <img src="images/pic1.jpg" />
-                    <button class="btn">好评截图</button>
-
-                </div>
-                <div class="col-xs-4 text-center">
-                    <img src="images/pic1.jpg" />
-                    <button class="btn">买家秀</button>
-
-                </div>
-                <div class="col-xs-4 text-center">
-
-                    <img src="images/pic1.jpg" />
-                    <button class="btn">买家秀</button>
-                </div>
-            </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!--步骤一-->
+    <div class="Step">
+      <div class="row">
+        <p>步骤一：</p>
+      </div>
+      <div class="form-group p202">
+        <label for="inputEmail3" class="col-xs-4 control-label p0 text-center">淘宝订单号</label>
+        <div class="col-xs-8">
+          <input type="email" class="form-control" id="inputEmail3" placeholder="淘宝订单号">
         </div>
-        <!--提交按钮-->
-        <button class="btn btn-block btn-primary mt20" data-toggle="modal" data-target="#myModal">立即提交，好评有礼</button>
-     <!--好评记录链接跳转-->
-        <div class="text-center mt20">
-            <a class="" href="PraiseDetail.html">我的好评记录</a>
+      </div>
+    </div>
+    <!--步骤二-->
+    <div class="Step">
+      <div class="row">
+        <p>步骤二：</p>
+      </div>
+      <div class="row p30">
+        <div class="col-xs-4 text-center">
+          <img :src="url" />
+          <button class="btn">好评截图</button>
+
         </div>
-        <!--模态弹出框-->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        <div class="col-xs-4 text-center">
+          <img :src="url" />
+          <button class="btn">买家秀</button>
+
+        </div>
+        <div class="col-xs-4 text-center">
+
+          <img :src="url" />
+          <button class="btn">买家秀</button>
+        </div>
+      </div>
+    </div>
+    <!--提交按钮-->
+    <button class="btn btn-block btn-primary mt20" data-toggle="modal" data-target="#myModal">立即提交，好评有礼</button>
+    <!--好评记录链接跳转-->
+    <div class="text-center mt20">
+      <a class="" href="PraiseDetail.html">我的好评记录</a>
+    </div>
+    <!--模态弹出框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                             &times;
                         </button>
-                        <h2 class="modal-title text-center" id="myModalLabel">
+            <h2 class="modal-title text-center" id="myModalLabel">
                             提示
                         </h2>
-                    </div>
-                    <div class="modal-body">
-                        提交成功，审核专员审核通过后，系统会自动将红包发送到您的微信。
-                    </div>
-                    <div class="modal-footer">
-                        <a type="button" class="btn btn-primary btn-block" href="PraiseDetail.html">
+          </div>
+          <div class="modal-body">
+            提交成功，审核专员审核通过后，系统会自动将红包发送到您的微信。
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-primary btn-block" href="PraiseDetail.html">
                            确定
                         </a>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal -->
+          </div>
         </div>
-        <!--查看规则按钮-->
-        <a class="btn btn-primary rule" href="rule.html">活动规则</a>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal -->
     </div>
-    <script src="js/lib/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/lib/bootstrap/3.3.6/bootstrap.min.js"></script>
-    <script src="js/lib/swiper/swiper.min.js"></script>
-    <script src="js/lib/vue/vue.js"></script>
-    
-    <script>
-        var box = new Vue({
-            el: '#box',
-            data: {
- 
-            },
-            methods: {
+    <!--查看规则按钮-->
+    <a class="btn btn-primary rule" href="rule.html">活动规则</a>
+  </div>
+  <script src="js/lib/jquery/2.1.4/jquery.min.js"></script>
+  <script src="js/lib/bootstrap/3.3.6/bootstrap.min.js"></script>
+  <script src="js/lib/swiper/swiper.min.js"></script>
+  <script src="js/lib/vue/vue.js"></script>
 
-            }
-        })
+  <script>
+    var box = new Vue({
+      el: '#box',
+      data: {
+        url: "images/pic1.jpg"
 
-</script>
-   <script>
+      },
+      methods: {
+
+      }
+    })
+  </script>
+  <script>
     var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        paginationClickable: true,
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: 2500,
-        autoplayDisableOnInteraction: false
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      paginationClickable: true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: 2500,
+      autoplayDisableOnInteraction: false
     });
-</script>
+  </script>
 
 </body>
+
 </html>
